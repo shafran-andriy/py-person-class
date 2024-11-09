@@ -8,6 +8,7 @@ class Person:
 
 
 def create_person_list(people: list[dict]) -> list:
+    # create new list with objects
     new_list = [Person(people[i]["name"], people[i]["age"])
                 for i in range(len(people))]
     for obj in range(len(new_list)):
